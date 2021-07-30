@@ -1,0 +1,33 @@
+{
+  "fields": [
+    {
+      "fieldName": "courseName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "creditHour",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipName": "students",
+      "otherEntityName": "students",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipName": "teacher",
+      "otherEntityName": "teacher",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "id"
+    }
+  ],
+  "service": "serviceImpl",
+  "dto": "no",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "infinite-scroll",
+  "name": "Courses",
+  "changelogDate": "20210728093544"
+}
